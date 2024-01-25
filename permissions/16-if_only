@@ -1,2 +1,2 @@
 #!/bin/bash
-[ "$(id -u)" = "$(stat -c '%u' hello)" ] || exit chown vincent hello
+chown --from=guillaume betty hello

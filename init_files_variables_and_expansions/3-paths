@@ -1,4 +1,2 @@
 #!/bin/bash
-path_directories=$(echo $PATH | tr ':' '\n')
-number_of_directories=$(echo "$path_directories" | wc -l)
-echo "Number of directories in PATH: $number_of_directories"
+echo $((` echo $PATH | grep -o ":/" | wc -l `+1))
